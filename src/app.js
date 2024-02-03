@@ -9,7 +9,14 @@ const cors = require("cors");
 // create server app
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+  origin: 'https://infinitycolorlabnodejs-b98a2e742923.herokuapp.com/',
+  methods: ['GET', 'POST'], // Add allowed HTTP methods as needed
+  allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers explicitly
+  // credentials: true, // Allow credentials (e.g., cookies)
+};
+
+app.use(cors(corsOptions));
 app.use(bodyParser());
 
 // Use userRoutes
