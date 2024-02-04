@@ -10,11 +10,11 @@ const cors = require("cors");
 const app = express();
 
 const corsOptions = {
-  origin: '*',
-  methods: ['GET', 'POST'], // Add allowed HTTP methods as needed
-  allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers explicitly
-  // credentials: true, // Allow credentials (e.g., cookies)
+  origin: ['https://sureshspd.github.io'],
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
 };
+
 
 app.use(cors(corsOptions));
 app.use(bodyParser());
