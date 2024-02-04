@@ -19,6 +19,9 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(bodyParser());
 
+// Handling preflight requests
+app.options('*', cors(corsOptions));
+
 // Use userRoutes
 app.use('/users', userRoutes);
 
