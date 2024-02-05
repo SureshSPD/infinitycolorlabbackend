@@ -1,6 +1,6 @@
 // mongodb
-require("./config/db");
-const userRoutes = require('./routes/signuproutes');
+require("./src/config/db");
+const userRoutes = require('./src/routes/signuproutes');
 
 const express = require("express");
 const bodyParser = require('express').json;
