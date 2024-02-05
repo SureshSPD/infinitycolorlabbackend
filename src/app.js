@@ -16,11 +16,12 @@ const app = express();
 // };
 
 const corsOptions = {
-  origin: 'https://infinitycolorlab.online/',
+  origin: '*',
   methods: ['GET', 'POST'], // Add allowed HTTP methods as needed
   allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers explicitly
   // credentials: true, // Allow credentials (e.g., cookies)
 };
+// 
 
 
 app.use(cors(corsOptions));
