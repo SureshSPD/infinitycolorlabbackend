@@ -9,10 +9,17 @@ const cors = require("cors");
 // create server app
 const app = express();
 
+// const corsOptions = {
+//   origin: ['https://infinitycolorlab.online/'],
+//   methods: ['GET', 'POST'],
+//   allowedHeaders: ['Content-Type', 'Authorization'],
+// };
+
 const corsOptions = {
-  origin: ['https://sureshspd.github.io'],
-  methods: ['GET', 'POST'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  origin: 'https://infinitycolorlab.online/',
+  methods: ['GET', 'POST'], // Add allowed HTTP methods as needed
+  allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers explicitly
+  // credentials: true, // Allow credentials (e.g., cookies)
 };
 
 
